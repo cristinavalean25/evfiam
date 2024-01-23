@@ -1,0 +1,130 @@
+.autorizatii-container {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  background-color: #f8f8f8;
+}
+
+.autorizatii-container::before {
+  content: "";
+  display: block;
+  padding-top: 80%;
+}
+
+.autorizatii-container img {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title-auth {
+  font-size: 48px;
+  z-index: 1;
+  color: #ed1476;
+  line-height: 2.4;
+  font-weight: 900;
+}
+
+.auth-details {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.auth-80 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  height: auto;
+  background-color: #fff;
+  padding-top: 2%;
+}
+
+.auth-title {
+  font-size: 34px;
+  color: #2d2660;
+  line-height: 1.8;
+}
+
+.auth-title h2 {
+  text-align: center;
+  padding: 2%;
+  font-weight: 700;
+}
+
+.text-auth-1 {
+  width: 70%;
+  height: auto;
+}
+
+.text-auth {
+  font-size: 17px;
+  line-height: 1.6;
+  text-indent: 50px;
+  text-align: justify;
+  color: #2d2660;
+  font-weight: 500;
+}
+
+.text-auth-1 ul {
+  list-style-type: none;
+}
+
+.text-auth-1 ul li {
+  position: relative;
+  padding-left: 1.2rem;
+  font-size: 17px;
+  line-height: 1.6;
+  text-indent: 50px;
+  color: #2d2660;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 767px) {
+  .autorizatii-container {
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+  .title-auth {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  .auth-title {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .autorizatii-container img {
+    width: 95%;
+    height: auto;
+  }
+
+  .auth-80 {
+    width: 95%;
+    height: auto;
+  }
+
+  .text-auth-1 {
+    width: 90%;
+    height: auto;
+  }
+}

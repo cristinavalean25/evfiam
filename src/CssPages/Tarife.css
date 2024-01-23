@@ -1,0 +1,148 @@
+.container-tarife {
+  width: 100%;
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tarife-continut {
+  width: 80%;
+  height: auto;
+  background: linear-gradient(to bottom, #022352, #fff);
+  margin-bottom: 2px;
+  background-color: #fff;
+  padding-bottom: 3%;
+}
+
+.title-tarife {
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.title-tarife h1 {
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: Arial, sans-serif;
+}
+
+.details-text {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.detalii-tarife {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: auto;
+  text-align: left;
+}
+
+.left-container,
+.right-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-inner-container,
+.right-inner-container {
+  border: 1px transparent;
+  padding: 25px;
+}
+
+.left-inner-container h2 {
+  color: #0b3558;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.left-inner-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.left-inner-container li {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.left-inner-container ul li::before {
+  content: "✔";
+  position: absolute;
+  left: -20px;
+  color: #7cfc00;
+  font-weight: bold;
+}
+
+.right-inner-container {
+  text-align: center;
+}
+
+.right-inner-container p {
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #0b3558;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.custom-list {
+  color: #586788;
+  font-weight: 600;
+}
+
+.price {
+  font-size: 45px;
+  font-weight: 900;
+  color: #242a35;
+  line-height: 1.6;
+}
+
+@media only screen and (max-width: 600px) {
+  .tarife-continut {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2px;
+    background-color: #fff;
+  }
+
+  .detalii-tarife {
+    width: 98%;
+  }
+
+  .d-tx {
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .price {
+    font-size: 23px;
+    font-weight: 800;
+    color: #242a35;
+    line-height: 1.6;
+  }
+}
