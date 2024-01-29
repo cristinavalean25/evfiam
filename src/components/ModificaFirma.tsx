@@ -14,71 +14,75 @@ function ModificaFirma() {
   const services = [
     {
       title: "Schimbare sediu social",
-      price: "550 Lei",
+      price: "500 Lei + TVA",
     },
     {
       title: "Prelungire sediu social",
-      price: "400 Lei",
+      price: "300 Lei + TVA",
     },
     {
       title: "Adăugare / ștergere cod CAEN",
-      price: "400 Lei",
+      price: "400 Lei + TVA",
     },
     {
-      title: "Actualizare date ONRC",
-      price: "250 Lei",
+      title: "Actualizare Asociați / Administrator",
+      price: "300 Lei + TVA",
     },
     {
       title: "Schimbare cod CAEN principal",
-      price: "550 Lei",
+      price: "500 Lei + TVA",
     },
     {
       title: "Actualizare act constitutiv",
-      price: "550 Lei",
+      price: "550 Lei + TVA",
     },
     {
       title: "Deschidere punct de lucru",
-      price: "400 Lei",
+      price: "300 Lei + TVA",
     },
     {
       title: "Majorare capital social",
-      price: "550 Lei",
+      price: "de la 700 Lei + TVA",
     },
     {
       title: "Schimbare administrator (adaugare/revocare)",
-      price: "550 Lei",
+      price: "500 Lei + TVA",
     },
     {
-      title: "Cesiune părți sociale",
-      price: "550 Lei",
+      title: "Transfer de părți sociale",
+      price: " 600 Lei + TVA ",
     },
     {
       title: "Închidere punct de lucru",
-      price: "400 Lei",
+      price: "300 Lei + TVA",
     },
     {
       title: "Transformare SRL-D în SRL",
-      price: "550 Lei",
+      price: "400 Lei + TVA",
     },
     {
       title: "Prelungire administrator",
-      price: "550 Lei",
+      price: "400 Lei + TVA",
     },
     {
       title: "Prelungire punct de lucru",
-      price: "400 Lei",
+      price: "400 Lei + TVA",
     },
     {
       title: "Reluare activitate firmă",
-      price: "400 Lei",
+      price: "400 Lei + TVA",
     },
     {
       title: "Schimbare denumire firmă",
-      price: "550 Lei",
+      price: "400 Lei + TVA",
     },
     {
       title: "Suspendare activitate firmă",
-      price: "400 Lei",
+      price: "400 Lei + TVA",
+    },
+    {
+      title: "Modificari Multiple ",
+      price: "500 Lei + 100 lei + TVA fiecare modificare",
     },
   ];
 
@@ -88,7 +92,6 @@ function ModificaFirma() {
       <Navbar />
       <div className="title-service">
         <h1>Modifica usor orice aspect din firma ta</h1>
-        <h4>Poti face oricate modificari doresti si platesti una singura</h4>
       </div>
       <div className="big-container">
         <div className="sevice-secound-container">

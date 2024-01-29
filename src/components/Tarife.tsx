@@ -1,7 +1,10 @@
+import { useState } from "react";
 import "../CssPages/Tarife.css";
 import { motion } from "framer-motion";
 
 function Tarife() {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <div className="container-tarife">
       <motion.div
@@ -24,7 +27,9 @@ function Tarife() {
         </motion.div>
 
         <div
-          className="d-tx"
+          className={`d-tx ${isHovered ? "hovered" : ""}`}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
           style={{
             display: "flex",
             alignItems: "center",
@@ -35,7 +40,7 @@ function Tarife() {
           <motion.div className="row detalii-tarife">
             <motion.div className="col-md-5 left-container">
               <div className="left-inner-container">
-                <h2>Deschide un SRL</h2>
+                <h2>{isHovered ? "Deschide un PFA" : "Deschide un SRL"}</h2>
 
                 <h5 className="subtitle">
                   Beneficiezi de o procedură simplă și rapidă, fără grijile de
@@ -53,8 +58,15 @@ function Tarife() {
 
             <motion.div className="col-md-5 right-container">
               <div className="right-inner-container">
-                <h2 className="price"> 748 RON</h2>
-                <h5 className="additional-cost">+128 RON Monitorul Oficial</h5>
+                <h2 className="price">
+                  {isHovered ? "300 RON + TVA" : "600 RON + TVA"}
+                </h2>
+                <h5 className="additional-cost">
+                  {" "}
+                  {isHovered
+                    ? "Fara taxe la Monitorul Oficial"
+                    : "+128 RON Monitorul Oficial"}
+                </h5>
               </div>
             </motion.div>
           </motion.div>

@@ -23,9 +23,9 @@ function Business() {
             Acum este ușor să deschizi o afacere
           </h1>
           <p className="details-text-business">
-            EVFIAM se ocupă de toată partea grea de la Registrul Comerțului.
-            Acum nu trebuie să te mai gândești la birocrație ci doar la
-            denumirea afacerii tale pentru a începe.
+            Ne ocupam de toată partea grea de la Registrul Comerțului. Acum nu
+            trebuie să te mai gândești la birocrație ci doar la denumirea
+            afacerii tale pentru a începe.
           </p>
         </motion.div>
 
@@ -33,14 +33,12 @@ function Business() {
           <div className="subdiv-1" style={{ backgroundImage: `url(${img1})` }}>
             <div className="subdiv-1-details">
               <h2 className="number">1.</h2>
-              <p className="sub-title">
-                Discuta cu un consilier <span>EVFIAM</span>
-              </p>
+              <p className="sub-title">Discuta cu un consilier</p>
               <p className="short-description">
-                Cu Evfiam, procesul de deschidere a firmei devine simplu și
-                eficient. Fără drumuri complicate la Registrul Comerțului, poți
-                să-ți înregistrezi afacerea rapid și ușor. Deschide-ți firma
-                acum cu Evfiam și transformă visul tău în realitate!
+                Cu ajutorul nostru, procesul de deschidere a firmei devine
+                simplu și eficient. Fără drumuri complicate la Registrul
+                Comerțului, poți să-ți înregistrezi afacerea rapid și ușor.
+                Deschide-ți firma acum și transformă visul tău în realitate!
               </p>
             </div>
           </div>
@@ -145,7 +143,7 @@ function Business() {
           </div>
         </div>
 
-        <div className="additional-div">
+        {/* <div className="additional-div">
           <div className="left-part">
             <h2 className="facturare">Facturare</h2>
             <div className="smart-bill-details">
@@ -173,14 +171,14 @@ function Business() {
             style={{ backgroundImage: `url(${img2})` }}
           >
             <div className="package-smart">
-              <h3>-25%</h3>
               <p className="text-facturare">
-                la toate pachetele anuale de facturare la SmartBill pentru
-                clientii Evfiam
+                „ Iar cei care dansau erau considerati nebuni de cei care nu
+                puteau auzi muzica ”
               </p>
+              <h3>Friedrich Nietzsche</h3>
             </div>
           </div>
-        </div>
+        </div> */}
       </motion.div>
     </motion.div>
   );

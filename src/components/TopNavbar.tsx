@@ -16,10 +16,11 @@ function TopNavbar() {
           <div className="col-md-6 d-flex align-items-center">
             <FaMapMarkerAlt className="ms-4 me-2" />
             <Link
-              to="https://www.google.com/maps/place/Strada+Gradinarilor+nr.+6,+Sibiu"
+              to="https://www.google.com/maps/place/Strada+Gradinarilor+nr.+4,+Sibiu"
               style={{ textDecoration: "none", color: "#fff" }}
+              target="blank"
             >
-              Strada Gradinarilor nr. 6
+              Strada Gradinarilor nr. 4
             </Link>
             <span className="mx-4">/</span>
             <FaEnvelope className="me-2" />
@@ -30,7 +31,7 @@ function TopNavbar() {
           <div className="col-md-6 d-flex align-items-center justify-content-end">
             <FaPhone className="me-2" />
             <a href="tel:+40753082874" className="navbar-link">
-              +40 753 082 874
+              +40 745 985 832
             </a>
             <span className="mx-4">/</span>
             <div className="social-links">

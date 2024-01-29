@@ -58,7 +58,7 @@ function Srl() {
                 <li>Fara deplasari</li>
                 <li>Fara dosar cu sina</li>
                 <li>De la tine de acasa</li>
-                <li>Din orice localitate din judetul Sibiu</li>
+                <li>Din orice localitate</li>
               </ul>
               <button onClick={handleGoButton} className="btn-start">
                 INCEPE ACUM
@@ -136,7 +136,7 @@ function Srl() {
           <div className="first-container">
             <h1>Cat costa?</h1>
             <div className="price-srl">
-              <h2>399 RON</h2>
+              <h2>300 RON + TVA</h2>
               <p>Fara taxe la Monitorul Oficial</p>
             </div>
             <button className="btn-cost" onClick={handleGoButton}>

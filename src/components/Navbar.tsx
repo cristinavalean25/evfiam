@@ -34,7 +34,7 @@ function Navbar() {
                 Modifica Firma
               </Link>
               <Link to="/AutorizatiiFirma" className="nav-link">
-                Autorizatii de Infiintare
+                Autorizatii de Functionare
               </Link>
               <Link to="/Osim" className="nav-link">
                 Inregistrare Marca OSIM

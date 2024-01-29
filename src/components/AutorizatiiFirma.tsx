@@ -7,56 +7,32 @@ import Footer from "./Footer";
 
 const contentData = [
   {
-    title:
-      "Care sunt avizele și autorizațiile necesare deschiderii unei firme?",
+    title: "Autorizația de Funcționare ",
     paragraphs: [
-      "Bine ai venit în lumea antreprenoriatului! La Efviam, suntem aici pentru a te ghida și sprijini în procesul complex al înființării unei firme. Înțelegem că acest demers implică nu doar curaj și entuziasm, ci și o atenție deosebită acordată detaliilor.",
-      "Dacă membrii și capitalul nu reprezintă o problemă, următorul pas important este obținerea avizelor și autorizațiilor necesare pentru ca firma ta să funcționeze legal. Compania noastră oferă un pachet complet de servicii pentru înființarea unei firme, asigurându-ne că vei dispune de toate documentele necesare și vei îndeplini condițiile impuse de lege.",
+      "Autorizația de Funcționare este documentul oficial emis de autoritatea locală competentă care îi permite beneficiarului să desfășoare activități de alimentație publică într-un anumit spațiu aflat în raza de competență a autorității locale emitente, sub condiția îndeplinirii anumitor obligații legale. Acestea sunt emise în baza unor metodologii adoptate prin hotărâri de consiliu local, astfel că, în practică există diferențe de procedură de la o localitate la alta, sau de la un sector la altul. ",
     ],
   },
   {
-    title: "Certificatul de Autorizare a Activității",
+    title: "Acordul de Funcționare ",
     paragraphs: [
-      "Indiferent de specificul activității tale, obținerea unui certificat de autorizare a activității este esențială pentru legalitatea și eligibilitatea afacerii tale. Acest certificat include codurile CAEN (Clasificarea Activităților din Economia Națională), care identifică specificul domeniului tău de activitate. Evfiam oferă suport complet în acest proces, asigurându-se că vei primi aceste coduri esențiale. Iată cum decurge întregul demers:",
-      "În prima fază, Evfiam îți oferă o consultare preliminară pentru a înțelege nevoile specifice ale afacerii tale. Această etapă include evaluarea domeniului de activitate, specificații legale și cerințele autorităților.",
-      "Următorul pas constă în documentarea și îndeplinirea cerințelor pentru autorizare. Evfiam te va ghida în procesul de adunare a documentelor necesare, asigurându-se că îndeplinești toate cerințele legale.",
-      "După documentare, Evfiam depune cererea pentru obținerea certificatului de autorizare la autoritățile competente. Acest proces include asigurarea conformității cu toate reglementările și normele în vigoare. O parte crucială a serviciilor oferite de Evfiam este obținerea și atribuirea codurilor CAEN specifice activității tale. Aceasta implică identificarea celor mai potrivite coduri CAEN în funcție de activitățile desfășurate.",
-      "După obținerea certificatului și codurilor CAEN, Evfiam oferă servicii de monitorizare pentru a asigura respectarea normelor pe parcursul desfășurării afacerii tale. Totodată, se ocupă de actualizarea și adaptarea la eventuale schimbări legislative sau reglementări.",
-      "Prin acest proces integral, Evfiam facilitează obținerea certificatului de autorizare și a codurilor CAEN, oferind suport în toate etapele pentru o desfășurare legală și conformă a afacerii tale.",
-    ],
-  },
-  {
-    title:
-      "Documente Necesare pentru Autorizarea Activității la Registrul Comerțului",
-    paragraphs: [
-      "În colaborare cu noi, vei avea toate actele necesare pentru înregistrarea la Registrul Comerțului. Printre acestea se numără:",
-      " ✔ Contract pentru Spațiu: Detalii complete ale locației unde se va afla firma, inclusiv datele de identificare ale proprietarilor.",
-      " ✔ Contract de Închiriere: Vizat de Administrația Finanțelor Publice, necesar în cazul închirierii de la o persoană fizică sau juridică. Documentație suplimentară poate fi necesară în anumite situații.",
-      " ✔ Hotărâre a Adunării Generale/Decizie Asociat Unic: Un document esențial pentru constituirea firmei.",
-      " ✔ Delegație, Contract de Comodat, Adeverință de la Asociația de Proprietari: Documente suplimentare pentru diverse aspecte ale afacerii tale.",
-    ],
-  },
-  {
-    title: "Autorizații și Avize în Funcție de Obiectul de Activitate",
-    paragraphs: [
-      "Evfiam îți oferă suport în obținerea tuturor autorizațiilor și avizelor necesare, adaptate obiectului principal și secundar de activitate:",
-      " ✔ Autorizație și Acord de Funcționare de la Primărie: Pentru activitățile cu spații fizice special dedicate.",
-      " ✔ Autorizație Sanitară de la DSP și Sanitar Veterinar de la DSVP: Esențiale pentru activitățile din domeniul alimentar.",
-      " ✔ Aviz Mediu: Pentru activitățile cu impact asupra mediului.",
-      " ✔ Autorizație PSI: Protecție și Stingere Incendiilor, necesară pentru spații extinse și activități cu un număr mare de angajați.",
-      " ✔ Autorizație de la ITM pentru Protecția Muncii: O cerință în cazul în care ai angajați.",
-      " ✔ Avize specifice domeniului tău de activitate:",
-    ],
-  },
-  {
-    paragraphs: [
-      "Cu Evfiam, intri în lumea antreprenoriatului cu încredere. Echipa noastră se dedică asigurării că demersul tău de înființare a firmei este un succes, punând la dispoziție soluții complete pentru a evita amenzi, sancțiuni și probleme care pot apărea pe parcurs.",
-      "În parteneriat cu noi, procesul de înființare devine mai ușor. Ne concentrăm pe obținerea certificatului de autorizare a activității, inclusiv a codurilor CAEN esențiale pentru domeniul tău de activitate. Oferim mai mult decât servicii administrative standard; suntem alături de tine în fiecare etapă.",
-      "Consultații preliminare, adunarea documentelor, depunerea cererilor și monitorizarea conformității sunt doar câteva aspecte din gama noastră completă de servicii. Evfiam nu doar simplifică procesul, ci și asigură că afacerea ta respectă întotdeauna reglementările legale.",
-      "Apelează la noi pentru a-ți maximiza șansele de succes în lumea afacerilor. Cu Evfiam, nu doar că înființezi o firmă, ci creezi o fundație solidă pentru o experiență antreprenorială sigură și eficientă.",
+      "Acordul de Funcționare este un document similar cu Autorizația de Funcționare, însă, spre deosebire de aceasta din urmă, Acordul de Funcționare îi permite beneficiarului să desfășoare activități de comerț și de prestări servicii într-un anumit spațiu aflat în raza de competență a autorității locale emitente, sub condiția îndeplinirii anumitor obligații legale",
+      "Atât Autorizația de Funcționare, cât și Acordul de Funcționare pot fi obținute doar în baza unui dosar, ce trebuie depus la instituția competentă.",
+      "Nerespectarea măsurii de încadrare în prevederile autorizaţiei de funcţionare se sancţionează cu amendă de  şi confiscarea bunurilor destinate, folosite sau obţinute din săvârşirea contravenţiei.",
+      "În dosarul de autorizare, ce trebuie întocmit pentru primărie vor fi necesare o serie de documente:",
+      "- Autorizaţie de la Direcția de Sănătate Publică sau negaţie ",
+      "- Autorizație de la Direcţia Sanitar – Veterinară și pentru Siguranța Alimentelor sau negaţie",
+      "- Autorizație de prevenire şi stingere a incendiilor sau negaţie (PSI) ",
+      "- Autorizaţie de mediu sau negaţie - copie; ",
     ],
   },
 ];
+
+const detailsCaen = {
+  paragraphs: [
+    "În situaţia în care se solicită emiterea acordului de funcţionare pentru un spaţiu în care se doreşte a se desfăşura activităţile încadrate în codurile CAEN: 5610- Restaurante, 5630- Baruri şi alte activităţi de servire a băuturilor, 5621- Activităţi de alimentaţie (catering) pentru evenimente, 5629-Alte activităţi de alimentaţie n.c.a, 4520- Întreţinerea şi repararea autovehiculelor",
+  ],
+  paragraphs2: [" PREȚURILE VOR  PUTEA SUFERII MODIFICĂRI"],
+};
 
 function AutorizatiiFirma() {
   return (
@@ -71,9 +47,10 @@ function AutorizatiiFirma() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 2.5 }}
         >
-          Autorizatii de infiintare
+          Autorizatii de Functionare
         </motion.div>
       </div>
+
       <div className="auth-details">
         <div className="auth-80">
           {contentData.map((section, index) => (
@@ -103,6 +80,74 @@ function AutorizatiiFirma() {
           ))}
         </div>
       </div>
+
+      <div className="auth-details-2">
+        <h2 className="auth-title">
+          <motion.h2
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2.5, delay: 0.5 }}
+          >
+            Tarife
+          </motion.h2>
+        </h2>
+        <div className="auth-2">
+          <div className="auth-80-2">
+            <h3 className="auth-title">Taxe</h3>
+            <h4 className="auth-title-2">Negații - 500 lei + TVA</h4>
+            <h4 className="auth-title-2">Acord de funtionare: 1000 lei TVA</h4>
+            <h4 className="auth-title-2">
+              Autorizația de Funcționare: 2000 lei
+            </h4>
+            <h4 className="auth-title-2">
+              <span>Nu include </span>TAXE ȘI TARIFE ACHITATE CĂTRE INSTITUȚII:
+            </h4>
+            <p className="auth-title-2">Taxe DSP - 400 lei</p>
+            <p className="auth-title-2">Taxe DNSVSA - 375 lei</p>
+            <p className="auth-title-2">Extras CF - 20 lei</p>
+            <p className="auth-title-2">Ortofotoplan - 15 lei</p>
+          </div>
+
+          <div className="auth-80-2">
+            <h3 className="auth-title">Taxe primărie </h3>
+            <p>Autorizatie de functionare – 50 lei</p>
+            <p className="auth-title-2">
+              <span>A.</span> Autorizatie de functionare – 50 lei
+            </p>
+            <p className="auth-title-2">
+              <span>B.</span> Autorizație alimentație publică - stabilită în
+              funcție de suprafața unității de alimentație publică inclusiv
+              terasele:
+            </p>
+            <div className="price-list">
+              <ul>
+                <li>pană la 25 mp - 180 lei;</li>
+                <li>între 26 mp și 50 mp inclusiv - 616 lei;</li>
+                <li>între 51 mp și 100 mp inclusiv - 923 lei;</li>
+                <li>între 101 mp și 150 mp inclusiv - 1231 lei;</li>
+                <li>între 151 mp și până la 300 mp inclusiv - 1847 lei;</li>
+                <li>între 301 mp și până la 400 mp inclusiv - 1949 lei;</li>
+                <li>între 401 mp și până la 500 mp - 2052 lei;</li>
+                <li>între 501 mp și până la 700 mp - 2822 lei;</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="auth-details">
+        <div className="auth-80">
+          {detailsCaen.paragraphs.map((paragraph, index) => (
+            <p key={index} className="text-auth" style={{ padding: "2%" }}>
+              {paragraph} :{" "}
+              <span style={{ color: "#ed1476", fontWeight: "bold" }}>
+                {detailsCaen.paragraphs2[0]}
+              </span>
+            </p>
+          ))}
+        </div>
+      </div>
+
       <Footer />
     </>
   );

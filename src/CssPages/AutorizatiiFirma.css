@@ -97,6 +97,70 @@
   font-weight: 500;
 }
 
+.auth-details-2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.auth-2 {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 80%;
+  background-color: #f8f8f8;
+}
+
+.auth-80-2 {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  width: 48%;
+  height: auto;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 2%;
+}
+
+.auth-title-2 {
+  font-size: 17px;
+  line-height: 1.6;
+  text-align: justify;
+  color: #2d2660;
+  font-weight: 500;
+}
+
+.price-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.price-list li {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.price-list ul li::before {
+  content: "✔";
+  position: absolute;
+  left: -20px;
+  color: #ed1476;
+  font-weight: bold;
+}
+
+.auth-80-2 span {
+  color: #ed1476;
+  font-weight: 600;
+}
+
 @media only screen and (max-width: 767px) {
   .autorizatii-container {
     width: 100%;

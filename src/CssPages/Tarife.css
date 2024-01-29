@@ -6,6 +6,18 @@
   justify-content: center;
 }
 
+.d-tx {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  transition: transform 4s ease;
+}
+
+.d-tx.hovered {
+  transform: rotatex(360deg);
+}
+
 .tarife-continut {
   width: 80%;
   height: auto;

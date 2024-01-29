@@ -133,11 +133,11 @@ function Contact() {
               <p className="text-contact">
                 <FaMapMarkerAlt />
                 <Link
-                  to="https://www.google.com/maps/place/Strada+Gradinarilor+nr.+6,+Sibiu"
+                  to="https://www.google.com/maps/place/Strada+Gradinarilor+nr.+4,+Sibiu"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Strada Gradinarilor nr. 6
+                  Strada Gradinarilor nr. 4
                 </Link>
               </p>
               <p className="text-contact">
