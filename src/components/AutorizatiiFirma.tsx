@@ -34,6 +34,38 @@ const detailsCaen = {
   paragraphs2: [" PREȚURILE VOR  PUTEA SUFERII MODIFICĂRI"],
 };
 
+const taxSections = [
+  {
+    title: "Alte Taxe",
+    items: [
+      " ✔ Negații - 500 lei + TVA",
+      " ✔ Acord de funcționare: 1000 lei TVA",
+      " ✔ Autorizația de Funcționare: 2000 lei",
+      " ✔ Nu include TAXE ȘI TARIFE ACHITATE CĂTRE INSTITUȚII:",
+      " ✔ Taxe DSP - 400 lei",
+      " ✔ Taxe DNSVSA - 375 lei",
+      " ✔ Extras CF - 20 lei",
+      " ✔ Ortofotoplan - 15 lei",
+    ],
+  },
+  {
+    title: "Taxe primărie",
+    items: [
+      "Autorizatie de funcționare – 50 lei",
+      "A. Autorizatie de funcționare – 50 lei",
+      "B. Autorizație alimentație publică - stabilită în funcție de suprafața unității de alimentație publică inclusiv terasele:",
+      " ✔ Până la 25 mp - 180 lei",
+      " ✔ Între 26 mp și 50 mp inclusiv - 616 lei",
+      " ✔ Între 51 mp și 100 mp inclusiv - 923 lei",
+      " ✔ Între 101 mp și 150 mp inclusiv - 1231 lei",
+      " ✔ Între 151 mp și până la 300 mp inclusiv - 1847 lei",
+      " ✔ Între 301 mp și până la 400 mp inclusiv - 1949 lei",
+      " ✔ Între 401 mp și până la 500 mp - 2052 lei",
+      " ✔ Între 501 mp și până la 700 mp - 2822 lei",
+    ],
+  },
+];
+
 function AutorizatiiFirma() {
   return (
     <>
@@ -41,14 +73,6 @@ function AutorizatiiFirma() {
       <Navbar />
       <div className="autorizatii-container">
         <img src={img1} alt="Imagine autorizatii" />
-        <motion.div
-          className="title-auth"
-          initial={{ opacity: 0, x: "100%" }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 2.5 }}
-        >
-          Autorizatii de Functionare
-        </motion.div>
       </div>
 
       <div className="auth-details">
@@ -91,47 +115,18 @@ function AutorizatiiFirma() {
             Tarife
           </motion.h2>
         </h2>
-        <div className="auth-2">
-          <div className="auth-80-2">
-            <h3 className="auth-title">Taxe</h3>
-            <h4 className="auth-title-2">Negații - 500 lei + TVA</h4>
-            <h4 className="auth-title-2">Acord de funtionare: 1000 lei TVA</h4>
-            <h4 className="auth-title-2">
-              Autorizația de Funcționare: 2000 lei
-            </h4>
-            <h4 className="auth-title-2">
-              <span>Nu include </span>TAXE ȘI TARIFE ACHITATE CĂTRE INSTITUȚII:
-            </h4>
-            <p className="auth-title-2">Taxe DSP - 400 lei</p>
-            <p className="auth-title-2">Taxe DNSVSA - 375 lei</p>
-            <p className="auth-title-2">Extras CF - 20 lei</p>
-            <p className="auth-title-2">Ortofotoplan - 15 lei</p>
-          </div>
 
-          <div className="auth-80-2">
-            <h3 className="auth-title">Taxe primărie </h3>
-            <p>Autorizatie de functionare – 50 lei</p>
-            <p className="auth-title-2">
-              <span>A.</span> Autorizatie de functionare – 50 lei
-            </p>
-            <p className="auth-title-2">
-              <span>B.</span> Autorizație alimentație publică - stabilită în
-              funcție de suprafața unității de alimentație publică inclusiv
-              terasele:
-            </p>
-            <div className="price-list">
-              <ul>
-                <li>pană la 25 mp - 180 lei;</li>
-                <li>între 26 mp și 50 mp inclusiv - 616 lei;</li>
-                <li>între 51 mp și 100 mp inclusiv - 923 lei;</li>
-                <li>între 101 mp și 150 mp inclusiv - 1231 lei;</li>
-                <li>între 151 mp și până la 300 mp inclusiv - 1847 lei;</li>
-                <li>între 301 mp și până la 400 mp inclusiv - 1949 lei;</li>
-                <li>între 401 mp și până la 500 mp - 2052 lei;</li>
-                <li>între 501 mp și până la 700 mp - 2822 lei;</li>
-              </ul>
+        <div className="auth-2">
+          {taxSections.map((section, index) => (
+            <div key={index} className="auth-80-2">
+              <h3 className="auth-title">{section.title}</h3>
+              {section.items.map((item, itemIndex) => (
+                <p key={itemIndex} className="auth-title-2">
+                  {item}
+                </p>
+              ))}
             </div>
-          </div>
+          ))}
         </div>
       </div>
 

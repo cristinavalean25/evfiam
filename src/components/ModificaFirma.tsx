@@ -42,7 +42,7 @@ function ModificaFirma() {
     },
     {
       title: "Majorare capital social",
-      price: "de la 700 Lei + TVA",
+      price: "700 Lei + TVA",
     },
     {
       title: "Schimbare administrator (adaugare/revocare)",

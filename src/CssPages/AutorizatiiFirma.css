@@ -27,19 +27,11 @@
   transform: translate(-50%, -50%);
 }
 
-.title-auth {
-  font-size: 48px;
-  z-index: 1;
-  color: #ed1476;
-  line-height: 2.4;
-  font-weight: 900;
-}
-
 .auth-details {
   width: 100%;
   height: auto;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   background-color: #f8f8f8;
   padding-top: 1%;
@@ -81,6 +73,7 @@
   text-align: justify;
   color: #2d2660;
   font-weight: 500;
+  margin: 0;
 }
 
 .text-auth-1 ul {
@@ -120,12 +113,10 @@
 
 .auth-80-2 {
   display: flex;
-  align-items: start;
-  justify-content: center;
+  align-items: stretch;
+  justify-content: flex-start;
   flex-direction: column;
   width: 48%;
-  height: auto;
-  margin: 0 auto;
   background-color: #fff;
   padding: 2%;
 }

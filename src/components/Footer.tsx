@@ -10,15 +10,7 @@ function Footer() {
           <div className="black-footer">
             <div className="column-group">
               <div>
-                <p
-                  style={{
-                    color: "#ED5E9F",
-                    fontSize: "24px",
-                    fontWeight: 600,
-                  }}
-                >
-                  EVFIAM INVESTMENT GROUP SRL
-                </p>
+                <p className="evf-title">EVFIAM INVESTMENT GROUP SRL</p>
                 <p className="text-footer">
                   str. Gradinarilor, nr. 4 Sibiu, 550129, Romania
                 </p>

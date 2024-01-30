@@ -1,8 +1,6 @@
 import "../CssPages/Business.css";
 import { motion } from "framer-motion";
-import logo from "../images/smart-bill-logo.png";
 import img1 from "../images/image-png.png";
-import img2 from "../images/pngwing.com.png";
 
 function Business() {
   return (

@@ -27,7 +27,7 @@ function Tarife() {
         </motion.div>
 
         <div
-          className={`d-tx ${isHovered ? "hovered" : ""}`}
+          className="d-tx"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
           style={{
@@ -62,7 +62,6 @@ function Tarife() {
                   {isHovered ? "300 RON + TVA" : "600 RON + TVA"}
                 </h2>
                 <h5 className="additional-cost">
-                  {" "}
                   {isHovered
                     ? "Fara taxe la Monitorul Oficial"
                     : "+128 RON Monitorul Oficial"}

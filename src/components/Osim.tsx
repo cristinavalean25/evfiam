@@ -8,6 +8,34 @@ import asis from "../images/asistenta-juridica.png";
 import Footer from "./Footer";
 
 function Osim() {
+  const pricesData = [
+    {
+      title:
+        "Costul înregistrării unei mărci la OSIM presupune plata unor taxe oficiale OSIM și a unui onorariu profesional. Oferta noastră (toate onorariile și taxele sunt incluse):",
+      items: [
+        "✓ marcă verbală = 700 de Lei (+ taxe OSIM )",
+        "✓ marcă logo alb-negru = 700 de Lei (+ taxe OSIM)",
+        "✓ marcă color = 700 de Lei (+ taxe OSIM)",
+      ],
+    },
+    {
+      title: "Taxele OSIM pentru inregistrarea unei marci sunt:",
+      items: [
+        "Taxa depunere si publicare cerere marca:",
+        " ✓ 197 lei pentru varianta de marca verbala sau alb-negru;",
+        " ✓ 544 lei pentru varianta de marca color;",
+        ,
+        "Taxa examinare marca:",
+        " ✓ 544 lei pentru varianta de marca verbala sau alb-negru;",
+        " ✓ 940 lei pentru varianta de marca color;",
+        " ✓ 148 lei daca marca are si element figurativ/grafica;",
+        " ✓ 247 lei pentru fiecare clasa de produse/servicii suplimentara;",
+        ,
+        "Taxa eliberare certificat inregistrare marca:",
+        " ✓ 247 lei.",
+      ],
+    },
+  ];
   return (
     <>
       <TopNavbar />
@@ -18,7 +46,7 @@ function Osim() {
           <div className="text-container-osim">
             <h1 className="title-osim"> Inregistreaza acum marca ta!</h1>
             <p className="main-text">
-              * Oferta Unica, 1000 lei onorariu complet pentru inregistrare
+              * Oferta Unica, 700 lei onorariu complet pentru inregistrare
               nationala si 1200 lei marca europeana.
             </p>
             <p className="main-text-1">
@@ -86,6 +114,7 @@ function Osim() {
               </p>
             </div>
           </div>
+
           <div className="details-osim-2">
             <h3 className="title-osim-3">
               Necesitatea inregistrarii unei marci comerciale
@@ -113,6 +142,7 @@ function Osim() {
             </div>
           </div>
         </div>
+
         <div className="details-osim-3">
           <h3 className="title-osim-3">Avantajele inregistrarii marcii</h3>
           <div className="descriere-osim-1">
@@ -145,7 +175,21 @@ function Osim() {
             </p>
           </div>
         </div>
+
+        {pricesData.map((section, index) => (
+          <div key={index} className="details-osim-3">
+            <h3 className="title-osim-3">{section.title}</h3>
+            <div className="descriere-osim-1">
+              {section.items.map((item, subIndex) => (
+                <p key={subIndex} className="text-price-osim">
+                  {item}
+                </p>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
+
       <Footer />
     </>
   );

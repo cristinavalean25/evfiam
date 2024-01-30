@@ -153,6 +153,21 @@
   padding: 2% 20%;
 }
 
+.price-osim {
+  font-size: 22px;
+  line-height: 38px;
+  letter-spacing: 1px;
+}
+
+.text-price-osim span {
+  display: inline-block;
+  width: 10px;
+  color: #ed1476;
+  font-weight: 600;
+  text-align: center;
+  margin-right: 5px;
+}
+
 @media screen and (max-width: 768px) {
   .container-osim {
     width: 100%;

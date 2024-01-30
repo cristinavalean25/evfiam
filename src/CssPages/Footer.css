@@ -95,6 +95,12 @@
   margin-top: 10px; 
 }
 
+.evf-title {
+   color: #ED5E9F;
+   font-size: 24px;
+   font-weight: 600;
+}
+
 .icon-footer a {
   text-decoration: none;
   color: #e91e63;
@@ -117,5 +123,22 @@
 
   .black-footer {
     width: 100%;
+  }
+
+  .column-group {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    line-height: 15px;
+  }
+
+  .evf-title {
+    font-size: 16px;
+    letter-spacing: 1.4px;
+  }
+
+  .text-footer {
+    font-size: 16px;
+    line-height: 20px;
   }
 }

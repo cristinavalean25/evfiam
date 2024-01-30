@@ -308,18 +308,21 @@
   }
 
   .title-tarife-business {
-    width: 90%;
+    width: 94%;
     text-align: center;
     align-items: center;
     margin: 0 auto;
     margin-top: 5%;
+    background-color: #eef2f7;
+    border-radius: 10px;
   }
 
   .title-business {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.3;
     text-align: center;
+    padding: 2%;
   }
 
   .details-text-business {
@@ -327,6 +330,8 @@
     font-weight: 400;
     line-height: 1.6;
     text-align: justify;
+    padding: 2%;
+    text-indent: 20px;
   }
 
   .details-div {
