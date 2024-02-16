@@ -340,3 +340,9 @@
     flex-direction: column;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .srl-img {
+    width: 100%;
+  }
+}

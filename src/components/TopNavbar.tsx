@@ -12,13 +12,13 @@ function TopNavbar() {
   return (
     <div className="main-container">
       <div className="top-navbar-container">
-        <div className="row p-2">
-          <div className="col-md-6 d-flex align-items-center">
+        <div className="row p-2 row-top-navbar">
+          <div className="col-lg-6 col-md-12 d-flex align-items-center">
             <FaMapMarkerAlt className="ms-4 me-2" />
             <Link
               to="https://www.google.com/maps/place/Strada+Gradinarilor+nr.+4,+Sibiu"
               style={{ textDecoration: "none", color: "#fff" }}
-              target="blank"
+              target="_blank"
             >
               Strada Gradinarilor nr. 4
             </Link>
@@ -28,7 +28,7 @@ function TopNavbar() {
               office@evfiam.com
             </a>
           </div>
-          <div className="col-md-6 d-flex align-items-center justify-content-end">
+          <div className="col-lg-6 col-md-12 d-flex align-items-center justify-content-lg-end justify-content-md-start">
             <FaPhone className="me-2" />
             <a href="tel:+40753082874" className="navbar-link">
               +40 745 985 832

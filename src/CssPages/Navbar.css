@@ -12,10 +12,6 @@
   margin-bottom: 0.4rem;
 }
 
-/* .navbar-brand {
-  margin-left: 30px;
-} */
-
 .navbar-nav {
   display: flex;
   align-items: center;
@@ -24,7 +20,7 @@
 }
 
 .nav-link {
-  margin: 0 10px;
+  margin: 0 auto;
 }
 
 .dropdown-item {

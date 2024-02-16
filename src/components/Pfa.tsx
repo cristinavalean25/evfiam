@@ -5,18 +5,13 @@ import img from "../images/hero7.jpg";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Footer from "./Footer";
+import { detalii } from "./detalii";
 
 function Srl() {
   const navigate = useNavigate();
+  const { reviews, srlLiDetails, srlLiText } = detalii;
   const [firmaName, setFirmaName] = useState("Contabilitate");
   const [reviewIndex, setReviewIndex] = useState(0);
-
-  const reviews = [
-    "Super incantata de promptitudinea si profesionalismul lor",
-    "O platforma foarte rapida si eficienta",
-    "Am avut o experienta foarte placuta cu aceasta companie",
-    "Raspund la orice intrebare si nelamurire",
-  ];
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -55,10 +50,9 @@ function Srl() {
             </h1>
             <div>
               <ul>
-                <li>Fara deplasari</li>
-                <li>Fara dosar cu sina</li>
-                <li>De la tine de acasa</li>
-                <li>Din orice localitate</li>
+                {Object.values(srlLiDetails).map((itemText, index) => (
+                  <li key={index}>{itemText}</li>
+                ))}
               </ul>
               <button onClick={handleGoButton} className="btn-start">
                 INCEPE ACUM
@@ -146,18 +140,9 @@ function Srl() {
 
           <div className="secound-container">
             <ul>
-              <li>De la tine de acasa, fara deplasari si stat la coada</li>
-              <li>
-                Te ghidam in alegerea codurilor CAEN, sediului si alte aspecte
-              </li>
-              <li>
-                Iti rezervam noi denumirea firmei si te ajutam in alegerea ei
-              </li>
-              <li>
-                Ai consultanta gratuit, iti raspundem la toate intrebarile
-              </li>
-              <li>Depunem noi dosarul de infiintare la Registrul Comertului</li>
-              <li>Fara costuri suplimentare</li>
+              {Object.values(srlLiText).map((text, item) => (
+                <li key={item}>{text}</li>
+              ))}
             </ul>
           </div>
         </div>
