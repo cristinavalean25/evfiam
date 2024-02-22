@@ -1,29 +1,28 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
-import TopNavbar from "./components/TopNavbar";
-import Navbar from "./components/Navbar";
-import AboutUs from "./components/AboutUs";
-import Contact from "./components/Contact";
-import ModificaFirma from "./components/ModificaFirma";
-import Srl from "./components/Srl";
-import Pfa from "./components/Pfa";
-import AutorizatiiFirma from "./components/AutorizatiiFirma";
-import Osim from "./components/Osim";
+import AboutUs from "./pages/AboutUs";
+import Contact from "./pages/Contact";
+import ModificaFirma from "./pages/ModificaFirma";
+import Srl from "./pages/Srl";
+import Pfa from "./pages/Pfa";
+import AutorizatiiFirma from "./pages/AutorizatiiFirma";
+import Osim from "./pages/Osim";
+import Layout from "./pages/Layout";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/TopNavbar" element={<TopNavbar />} />
-      <Route path="/Navbar" element={<Navbar />} />
-      <Route path="/AboutUs" element={<AboutUs />} />
-      <Route path="/Contact" element={<Contact />} />
-      <Route path="/ModificaFirma" element={<ModificaFirma />} />
-      <Route path="/Srl" element={<Srl />} />
-      <Route path="/Pfa" element={<Pfa />} />
-      <Route path="/AutorizatiiFirma" element={<AutorizatiiFirma />} />
-      <Route path="/Osim" element={<Osim />} />
-    </Routes>
+    <Layout>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/despre-noi" element={<AboutUs />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/modifica-firma" element={<ModificaFirma />} />
+        <Route path="/srl" element={<Srl />} />
+        <Route path="/pfa" element={<Pfa />} />
+        <Route path="/autorizatii-firma" element={<AutorizatiiFirma />} />
+        <Route path="/osim" element={<Osim />} />
+      </Routes>
+    </Layout>
   );
 }
 

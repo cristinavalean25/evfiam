@@ -1,17 +1,12 @@
 import "../CssPages/AutorizatiiFirma.css";
-import Navbar from "./Navbar";
-import TopNavbar from "./TopNavbar";
 import img1 from "../images/pexels-tima-miroshnichenko-6694543.jpg";
 import { motion } from "framer-motion";
-import Footer from "./Footer";
-import { detalii } from "./detalii";
+import { details } from "../components/details";
 
 function AutorizatiiFirma() {
-  const { contentData, detailsCaen, taxSections } = detalii;
+  const { contentData, detailsCaen, taxSections } = details;
   return (
     <>
-      <TopNavbar />
-      <Navbar />
       <div className="autorizatii-container">
         <img src={img1} alt="Imagine autorizatii" />
       </div>
@@ -75,7 +70,7 @@ function AutorizatiiFirma() {
         <div className="auth-80">
           {detailsCaen.paragraphs.map((paragraph, index) => (
             <p key={index} className="text-auth" style={{ padding: "2%" }}>
-              {paragraph} :{" "}
+              {paragraph}:{" "}
               <span style={{ color: "#ed1476", fontWeight: "bold" }}>
                 {detailsCaen.additionalNote}
               </span>
@@ -83,8 +78,6 @@ function AutorizatiiFirma() {
           ))}
         </div>
       </div>
-
-      <Footer />
     </>
   );
 }

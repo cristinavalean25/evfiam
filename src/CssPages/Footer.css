@@ -9,7 +9,7 @@
 
 .text-footer {
   font-size: 17px;
-  color: #f8f8f8;
+  color: #476788;
   line-height: 0.8;
 }
 
@@ -38,13 +38,6 @@
   border: 1px solid #796f67;
 }
 
-.img-acreditari {
-  width: 200px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
 .second-footer {
   width: 100%;
   height: auto;
@@ -53,12 +46,14 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 1rem;
 }
 
 .black-footer {
-  background-color: black;
+  background-color: #fcfcfd;
   width: 80%;
   padding: 15px;
+  box-shadow: rgba(0, 0, 0, #796f67);
 }
 
 .secound-footer-details {
@@ -71,7 +66,8 @@
 }
 
 .secound-footer-details span {
-  color: #fff;
+  color: #5c2d91;
+  font-weight: 600;
   margin-right: 10px;
   font-size: 13px;
   margin-bottom: 10px;
@@ -97,14 +93,64 @@
   margin: 0 10px;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 1201px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+  }
+
+  .second-footer {
+    width: 100%;
+    height: auto;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .secound-container-footer {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .black-footer {
+    background-color: #fcfcfd;
+    width: 95%;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, #796f67);
+  }
+
+  .column-group {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .evf-title {
+    color: #ed5e9f;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .column-second-group {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
   .secound-container-footer {
     flex-direction: column;
     width: 100%;
   }
 
   .column-home,
-  .column-group,
   .column-icon,
   .column-acreditari {
     text-align: center;
@@ -119,7 +165,12 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    width: 100%;
     line-height: 15px;
+  }
+
+  .column-second-group {
+    width: 100%;
   }
 
   .evf-title {
@@ -130,5 +181,11 @@
   .text-footer {
     font-size: 16px;
     line-height: 20px;
+  }
+
+  .evf-title {
+    color: #ed5e9f;
+    font-size: 18px;
+    font-weight: 600;
   }
 }

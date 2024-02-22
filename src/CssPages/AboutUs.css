@@ -73,4 +73,14 @@
     justify-content: center;
     width: 95%;
   }
+
+  .sec-about-container-text {
+    width: 100%;
+    height: auto;
+  }
+
+  .details-text-about {
+    width: 95%;
+    height: auto;
+  }
 }

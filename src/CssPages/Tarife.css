@@ -133,6 +133,100 @@
   line-height: 1.6;
 }
 
+@media only screen and (max-width: 1200px) {
+  .container-tarife {
+    width: 100%;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tarife-continut {
+    width: 95%;
+    height: auto;
+    background: linear-gradient(to bottom, #022352, #fff);
+    margin-bottom: 2px;
+    background-color: #fff;
+    padding-bottom: 3%;
+  }
+
+  .detalii-tarife {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: auto;
+  }
+
+  .col-md-5,
+  .left-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .d-tx {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left-container,
+  .left-inner-container {
+    width: 100%;
+  }
+
+  .custom-list {
+    color: #586788;
+    font-weight: 600;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .container-tarife {
+    width: 100%;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tarife-continut {
+    width: 95%;
+    height: auto;
+    background: linear-gradient(to bottom, #022352, #fff);
+    margin-bottom: 2px;
+    background-color: #fff;
+    padding-bottom: 3%;
+  }
+
+  .d-tx {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .detalii-tarife {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-md-5 .left-container {
+    display: flex;
+    width: 100%;
+  }
+
+  .custom-list {
+    color: #586788;
+    font-weight: 600;
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .tarife-continut {
     width: 100%;
@@ -143,12 +237,17 @@
 
   .detalii-tarife {
     width: 98%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
   }
 
   .d-tx {
     width: 90%;
     align-items: center;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
   }
 
   .price {

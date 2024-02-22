@@ -182,4 +182,26 @@
     width: 90%;
     height: auto;
   }
+
+  .auth-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f8f8f8;
+  }
+
+  .auth-80-2 {
+    width: 95%;
+    background-color: #fff;
+    padding: 2%;
+  }
+
+  .auth-title-2 {
+    font-size: 16px;
+    text-align: left;
+    color: #2d2660;
+    font-weight: 500;
+  }
 }

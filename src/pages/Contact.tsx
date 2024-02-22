@@ -1,9 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import "../CssPages/Contact.css";
-import Footer from "./Footer";
-import Navbar from "./Navbar";
-import TopNavbar from "./TopNavbar";
 import { FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -20,11 +17,15 @@ function Contact() {
 
   const [email, setEmail] = useState("");
   const [emailError, setEmailError] = useState("");
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+  const [formError, setFormError] = useState("");
 
   const emailRegex =
     /^[a-z][a-z0-9_]*@[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
 
-  const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleEmailChange = (event: any) => {
     const enteredEmail = event.target.value;
     setEmail(enteredEmail);
 
@@ -35,20 +36,25 @@ function Contact() {
     }
   };
 
-  const handlePhoneChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handlePhoneChange = (event: any) => {
     const inputValue = event.target.value;
     const numericValue = inputValue.replace(/\D/g, "");
-    const phoneInput = document.getElementById("phone") as HTMLInputElement;
+    setPhone(numericValue);
+  };
 
-    if (phoneInput) {
-      phoneInput.value = numericValue;
+  const handleSubmit = (event: any) => {
+    event.preventDefault();
+
+    if (!name || !email || !phone || !message) {
+      setFormError("Toate câmpurile marcate cu * trebuie completate.");
+      return;
     }
+
+    console.log("Message send!");
   };
 
   return (
     <>
-      <TopNavbar />
-      <Navbar />
       <div className="contact-container">
         <motion.div
           className="contact-inner-container"
@@ -57,58 +63,60 @@ function Contact() {
           transition={{ duration: 2.5 }}
         >
           <div className="contact-form">
-            <label
-              htmlFor="name"
-              style={{ color: "#022352", fontSize: "22px", fontWeight: 400 }}
-            >
-              Nume (obligatoriu)
-            </label>
-            <input
-              type="text"
-              id="name"
-              placeholder="Introduceți numele"
-              required
-            />
+            <form onSubmit={handleSubmit}>
+              <label htmlFor="name" className="label-contact">
+                Nume <span>*</span>
+              </label>
+              <input
+                type="text"
+                id="name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                placeholder="Introduceți numele"
+                required
+              />
 
-            <label
-              htmlFor="email"
-              style={{ color: "#022352", fontSize: "22px", fontWeight: 400 }}
-            >
-              Email (obligatoriu)
-            </label>
-            <input
-              type="email"
-              id="email"
-              value={email}
-              onChange={handleEmailChange}
-              placeholder="Introduceți adresa de email"
-              required
-            />
-            {emailError && <p style={{ color: "red" }}>{emailError}</p>}
+              <label htmlFor="email" className="label-contact">
+                Email <span>*</span>
+              </label>
+              <input
+                type="email"
+                id="email"
+                value={email}
+                onChange={handleEmailChange}
+                placeholder="Introduceți adresa de email"
+                required
+              />
+              {emailError && <p style={{ color: "red" }}>{emailError}</p>}
 
-            <label
-              htmlFor="phone"
-              style={{ color: "#022352", fontSize: "22px", fontWeight: 400 }}
-            >
-              Telefon
-            </label>
-            <input
-              type="tel"
-              id="phone"
-              onChange={handlePhoneChange}
-              placeholder="Introduceți numărul de telefon"
-              required
-            />
+              <label htmlFor="phone" className="label-contact">
+                Telefon <span>*</span>
+              </label>
+              <input
+                type="tel"
+                id="phone"
+                value={phone}
+                onChange={handlePhoneChange}
+                placeholder="Introduceți numărul de telefon"
+                required
+              />
 
-            <label
-              htmlFor="message"
-              style={{ color: "#022352", fontSize: "22px", fontWeight: 400 }}
-            >
-              Mesaj
-            </label>
-            <textarea id="message" placeholder="Introduceți mesajul"></textarea>
+              <label htmlFor="message" className="label-contact">
+                Mesaj
+              </label>
+              <textarea
+                id="message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                placeholder="Introduceți mesajul"
+              ></textarea>
 
-            <button className="btn-trimite">Trimite</button>
+              {formError && <p style={{ color: "red" }}>{formError}</p>}
+
+              <button type="submit" className="btn-trimite">
+                Trimite
+              </button>
+            </form>
           </div>
 
           <div className="contact-info">
@@ -150,7 +158,6 @@ function Contact() {
           </div>
         </motion.div>
       </div>
-      <Footer />
     </>
   );
 }

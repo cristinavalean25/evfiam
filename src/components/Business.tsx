@@ -1,10 +1,10 @@
 import "../CssPages/Business.css";
 import { motion } from "framer-motion";
 import img1 from "../images/image-png.png";
-import { detalii } from "./detalii";
+import { details } from "./details";
 
 function Business() {
-  const { businessText, businessDetails } = detalii;
+  const { businessText, businessDetails } = details;
 
   return (
     <motion.div className="business-container">

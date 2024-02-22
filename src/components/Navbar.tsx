@@ -1,15 +1,24 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Navbar as BootstrapNavbar, Nav, NavDropdown } from "react-bootstrap";
 import logo from "../images/Logo_default.png";
 import "../CssPages/Navbar.css";
 
 function Navbar() {
+  const [expanded, setExpanded] = useState(false);
+
+  const closeMenu = () => setExpanded(false);
+
   return (
     <>
       <div className="navbar-container">
-        <BootstrapNavbar expand="lg" className="line-navbar">
+        <BootstrapNavbar
+          expand="lg"
+          className="line-navbar"
+          expanded={expanded}
+        >
           <BootstrapNavbar.Brand>
-            <Link to="/">
+            <Link to="/" onClick={closeMenu}>
               <img
                 src={logo}
                 alt="Logo"
@@ -19,24 +28,35 @@ function Navbar() {
               />
             </Link>
           </BootstrapNavbar.Brand>
-          <BootstrapNavbar.Toggle aria-controls="navbar-nav" />
+          <BootstrapNavbar.Toggle
+            aria-controls="navbar-nav"
+            onClick={() => setExpanded(!expanded)}
+          />
           <BootstrapNavbar.Collapse id="navbar-nav">
             <Nav className="ml-auto">
               <NavDropdown title="Infiinteaza Firma" id="infiinteaza-dropdown">
-                <Link to="/Srl" className="dropdown-item">
+                <Link to="/srl" className="dropdown-item" onClick={closeMenu}>
                   Infiinteaza SRL
                 </Link>
-                <Link to="/Pfa" className="dropdown-item">
+                <Link to="/pfa" className="dropdown-item" onClick={closeMenu}>
                   Infiinteaza PFA
                 </Link>
               </NavDropdown>
-              <Link to="/ModificaFirma" className="nav-link">
+              <Link
+                to="/modifica-firma"
+                className="nav-link"
+                onClick={closeMenu}
+              >
                 Modifica Firma
               </Link>
-              <Link to="/AutorizatiiFirma" className="nav-link">
+              <Link
+                to="/autorizatii-firma"
+                className="nav-link"
+                onClick={closeMenu}
+              >
                 Autorizatii de Functionare
               </Link>
-              <Link to="/Osim" className="nav-link">
+              <Link to="/osim" className="nav-link" onClick={closeMenu}>
                 Inregistrare Marca OSIM
               </Link>
               <Link
@@ -44,13 +64,14 @@ function Navbar() {
                 className="nav-link"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={closeMenu}
               >
                 Contabilitate
               </Link>
-              <Link to="/AboutUs" className="nav-link">
+              <Link to="/despre-noi" className="nav-link" onClick={closeMenu}>
                 Despre Noi
               </Link>
-              <Link to="/contact" className="nav-link">
+              <Link to="/contact" className="nav-link" onClick={closeMenu}>
                 Contact
               </Link>
             </Nav>

@@ -1,15 +1,12 @@
 import "../CssPages/Srl.css";
-import Navbar from "./Navbar";
-import TopNavbar from "./TopNavbar";
 import img from "../images/hero7.jpg";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-import Footer from "./Footer";
-import { detalii } from "./detalii";
+import { details } from "../components/details";
 
 function Srl() {
   const navigate = useNavigate();
-  const { reviews, srlLiDetails, srlLiText } = detalii;
+  const { reviews, srlText, srlLiDetails, srlLiText } = details;
   const [firmaName, setFirmaName] = useState("Contabilitate");
   const [reviewIndex, setReviewIndex] = useState(0);
 
@@ -38,13 +35,11 @@ function Srl() {
 
   return (
     <>
-      <TopNavbar />
-      <Navbar />
       <div className="srl-big-container">
         <div className="srl-secound-container">
           <div className="srl-details">
             <h1>
-              Înființează-ți PFA <span className="span-srl">online</span>, în
+              Înființează-ți SRL <span className="span-srl">online</span>, în
               doar
               <span className="span-srl"> 3 zile</span>
             </h1>
@@ -87,40 +82,12 @@ function Srl() {
         </h2>
         <div className="evfiam-details">
           <div className="evfiam-section">
-            <div className="info-item">
-              <h3 className="info-item-title">Asistenta permanenta</h3>
-              <p className="item-details">
-                Ai asistenta la orice pas in utilizarea platformei, de la{" "}
-                <span>consultanti profesionisti</span>, pentru realizarea
-                operatiunilor dorite.
-              </p>
-            </div>
-
-            <div className="info-item">
-              <h3 className="info-item-title">Fara dosar cu sina</h3>
-              <p className="item-details">
-                Ai scapat de <span>completarea manuala a formularelor</span>,
-                acum se ocupa consultantii nostrii de birocratie.
-              </p>
-            </div>
-
-            <div className="info-item">
-              <h3 className="info-item-title">Fara stat la coada</h3>
-              <p className="item-details">
-                Iti <span>depunem noi </span>dosarul la ONRC, fara costuri
-                suplimentare. Totul <span>online</span>, fara deplasari pentru
-                tine.
-              </p>
-            </div>
-
-            <div className="info-item">
-              <h3 className="info-item-title">Gata in 3 zile</h3>
-              <p className="item-details">
-                Dureaza doar <span>5 minute</span> ca sa completezi datele
-                necesare si 3 zile <span>solutionarea dosarului </span> la
-                Registrul Comertului.
-              </p>
-            </div>
+            {Object.values(srlText).map((item, index) => (
+              <div className="info-item" key={index}>
+                <h3 className="info-item-title">{item.title}</h3>
+                <p className="item-details">{item.details}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -130,24 +97,23 @@ function Srl() {
           <div className="first-container">
             <h1>Cat costa?</h1>
             <div className="price-srl">
-              <h2>300 RON + TVA</h2>
-              <p>Fara taxe la Monitorul Oficial</p>
+              <h2>600 RON + TVA</h2>
+              <p>+128 RON Monitorul Oficial</p>
             </div>
             <button className="btn-cost" onClick={handleGoButton}>
-              INFIINTEAZA PFA
+              INFIINTEAZA SRL
             </button>
           </div>
 
           <div className="secound-container">
             <ul>
-              {Object.values(srlLiText).map((text, item) => (
-                <li key={item}>{text}</li>
+              {Object.values(srlLiText).map((text, index) => (
+                <li key={index}>{text}</li>
               ))}
             </ul>
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

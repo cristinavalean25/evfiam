@@ -1,8 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import "../CssPages/ModificaFirma.css";
-import Footer from "./Footer";
-import Navbar from "./Navbar";
-import TopNavbar from "./TopNavbar";
 
 function ModificaFirma() {
   const navigate = useNavigate();
@@ -88,8 +85,6 @@ function ModificaFirma() {
 
   return (
     <>
-      <TopNavbar />
-      <Navbar />
       <div className="title-service">
         <h1>Modifica usor orice aspect din firma ta</h1>
       </div>
@@ -116,7 +111,6 @@ function ModificaFirma() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

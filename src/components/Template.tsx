@@ -23,9 +23,9 @@ function Template() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 2.5, delay: 3 }}
         >
-          <h1>Deschide-ți</h1>
-          <h1>SRL-ul</h1>
-          <h1>100% online</h1>
+          <h1 className="title-template">Deschide-ți</h1>
+          <h1 className="title-template">SRL-ul</h1>
+          <h1 className="title-template">100% online</h1>
         </motion.div>
 
         <motion.div className="details-container">

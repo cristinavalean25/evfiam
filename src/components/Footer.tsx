@@ -9,13 +9,13 @@ function Footer() {
         <div className="second-footer">
           <div className="black-footer">
             <div className="column-group">
-              <div>
+              <div className="column-second-group">
                 <p className="evf-title">EVFIAM INVESTMENT GROUP SRL</p>
                 <p className="text-footer">
                   str. Gradinarilor, nr. 4 Sibiu, 550129, Romania
                 </p>
               </div>
-              <div>
+              <div className="column-second-group">
                 <p className="text-footer">Phone: +40 745 985 832</p>
                 <p className="text-footer">Email: office@evfiam.com</p>
               </div>
@@ -24,12 +24,12 @@ function Footer() {
             <div className="line-footer"></div>
 
             <div className="secound-footer-details">
-              <span style={{ color: "#796F67" }}>© Copyright 2024 |</span>
+              <span style={{ color: "#476788" }}>© Copyright 2024 |</span>
               <span style={{ color: "#ED5E9F" }}>
                 EVFIAM INVESTMENT GROUP <span>|</span>
               </span>
-              <span style={{ color: "#796F67" }}>All Rights Reserved |</span>
-              <span style={{ color: "#796F67" }}>
+              <span style={{ color: "#476788" }}>All Rights Reserved |</span>
+              <span style={{ color: "#476788" }}>
                 Powered by <span>GESP IT SOLUTION</span>
               </span>
             </div>
@@ -38,7 +38,7 @@ function Footer() {
               <Link
                 to="https://www.facebook.com/evfiam"
                 target="blank"
-                style={{ color: "#E91E63", marginRight: "10px" }}
+                style={{ color: "#0B3558", marginRight: "10px" }}
               >
                 <FaFacebook />
               </Link>
@@ -46,16 +46,16 @@ function Footer() {
               <Link
                 to="https://www.instagram.com/evfiam/"
                 target="blank"
-                style={{ color: "#E91E63", marginRight: "10px" }}
+                style={{ color: "#0B3558", marginRight: "10px" }}
               >
                 <FaInstagram />
               </Link>
 
-              <Link to="/" style={{ color: "#E91E63", marginRight: "10px" }}>
+              <Link to="/" style={{ color: "#0B3558", marginRight: "10px" }}>
                 <FaTimes />
               </Link>
 
-              <Link to="/" style={{ color: "#E91E63", marginRight: "10px" }}>
+              <Link to="/" style={{ color: "#0B3558", marginRight: "10px" }}>
                 <FaYoutube />
               </Link>
             </div>

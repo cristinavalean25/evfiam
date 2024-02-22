@@ -1,4 +1,4 @@
-export const detalii = {
+export const details = {
   businessDetails: [
     {
       number: 1,
@@ -89,7 +89,7 @@ export const detalii = {
 
   detailsCaen: {
     paragraphs: [
-      "În situaţia în care se solicită emiterea acordului de funcţionare pentru un spaţiu în care se doreşte a se desfăşura activităţile încadrate în codurile CAEN: 5610- Restaurante, 5630- Baruri şi alte activităţi de servire a băuturilor, 5621- Activităţi de alimentaţie (catering) pentru evenimente, 5629-Alte activităţi de alimentaţie n.c.a, 4520- Întreţinerea şi repararea autovehiculelor",
+      "În situaţia în care se solicită emiterea acordului de funcţionare pentru un spaţiu în care se doreşte a se desfăşura activităţile încadrate în codurile CAEN: 5610- Restaurante, 5630- Baruri şi alte activităţi de servire a băuturilor, 5621- Activităţi de alimentaţie (catering) pentru evenimente, 5629-Alte activităţi de alimentaţie n.c.a, 4520 - Întreţinerea şi repararea autovehiculelor",
     ],
     additionalNote: "PREȚURILE VOR PUTEA SUFERII MODIFICĂRI",
   },

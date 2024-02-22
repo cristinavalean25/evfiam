@@ -22,16 +22,12 @@
   transform: translateY(-40%);
   margin-left: 10%;
   color: #fff;
-}
-
-.text-container-template h1 {
-  font-size: 3.5rem;
-  line-height: 1.5;
+  width: 100%;
 }
 
 .details-container {
   position: absolute;
-  top: 63%;
+  top: 48%;
   transform: translateY(-10%);
   margin-left: 10%;
   color: #fff;
@@ -45,7 +41,7 @@
 
 .container-list {
   position: absolute;
-  top: 81%;
+  top: 65%;
   margin-left: 9%;
   color: #fff;
 }
@@ -80,6 +76,55 @@
   cursor: pointer;
 }
 
+@media only screen and (max-width: 1200px) {
+  .container-template {
+    width: 100%;
+    height: auto;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .center-container {
+    width: 95%;
+    background-image: url("../images/img1.png");
+    height: 93vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 2px;
+  }
+
+  .container-list {
+    top: 68%;
+    color: #fff;
+    font-weight: 400;
+    left: 1%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .text-container-template {
+    position: absolute;
+    top: 25%;
+    transform: translateY(-40%);
+    margin-left: 10%;
+    color: #fff;
+    width: 100%;
+  }
+
+  .details-container {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-10%);
+    margin-left: 10%;
+    color: #fff;
+    width: 50%;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .container-template {
     width: 100%;
@@ -96,33 +141,68 @@
   }
 
   .text-container-template {
-    top: 25%;
+    top: 20%;
     transform: translateY(-30%);
     text-align: left;
     align-items: center;
     width: 100%;
   }
 
-  .text-container-template h1 {
-    font-size: 2rem;
+  .title-template {
+    font-size: 28px;
     width: 100%;
   }
 
   .details-container {
-    top: 50%;
-    transform: translateY(-25%);
+    top: 42%;
+    width: 80%;
     text-align: justify;
+    transform: translateY(-25%);
   }
 
   .details-container p {
-    font-size: 1.2rem;
+    font-size: 16px;
     line-height: 1.2;
   }
 
   .container-list {
-    top: 68%;
+    top: 57%;
     color: #fff;
     font-weight: 400;
-    left: -15%;
+    left: -5%;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  .text-container-template {
+    position: absolute;
+    top: 20%;
+    margin-left: 10%;
+    color: #fff;
+    width: 100%;
+  }
+
+  .title-template {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .details-container {
+    top: 55%;
+    width: 80%;
+    text-align: justify;
+    transform: translateY(-25%);
+  }
+
+  .details-container p {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .container-list {
+    top: 72%;
+    color: #fff;
+    font-weight: 400;
+    left: 1%;
   }
 }

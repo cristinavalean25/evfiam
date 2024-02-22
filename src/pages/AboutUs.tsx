@@ -1,17 +1,11 @@
 import "../CssPages/AboutUs.css";
-import Navbar from "./Navbar";
-import TopNavbar from "./TopNavbar";
 import imgBusiness from "../images/business.jpg";
-import Footer from "./Footer";
-import { detalii } from "./detalii";
+import { details } from "../components/details";
 
 function AboutUs() {
-  const { descriereAbout } = detalii;
+  const { descriereAbout } = details;
   return (
     <>
-      <TopNavbar />
-      <Navbar />
-
       <div className="about-us-container">
         <div className="background-container-about">
           <img
@@ -33,7 +27,6 @@ function AboutUs() {
           </div>
         ))}
       </div>
-      <Footer />
     </>
   );
 }

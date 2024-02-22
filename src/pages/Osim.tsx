@@ -1,20 +1,15 @@
 import "../CssPages/Osim.css";
-import Navbar from "./Navbar";
-import TopNavbar from "./TopNavbar";
 import img from "../images/px.jpg";
 import people from "../images/pp.png";
 import clock from "../images/clock.png";
 import asis from "../images/asistenta-juridica.png";
-import Footer from "./Footer";
-import { detalii } from "./detalii";
+import { details } from "../components/details";
 
 function Osim() {
   const { pricesData, osimDetailsData, osimDetailsData2, avantajeOsim } =
-    detalii;
+    details;
   return (
     <>
-      <TopNavbar />
-      <Navbar />
       <div className="container-osim">
         <div className="inner-container">
           <img src={img} alt="Background" />
@@ -111,8 +106,6 @@ function Osim() {
           </div>
         </div>
       ))}
-
-      <Footer />
     </>
   );
 }

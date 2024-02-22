@@ -53,6 +53,10 @@
   background-color: #ed1d75;
 }
 
+.contact-form span {
+  color: red;
+}
+
 .contact-info {
   flex: 1;
   padding: 20px;
@@ -69,6 +73,12 @@
   color: #02006e;
   font-weight: 600;
   line-height: 0.8;
+}
+
+.label-contact {
+  color: #022352;
+  font-size: 17px;
+  font-weight: 400;
 }
 
 .text-contact a {

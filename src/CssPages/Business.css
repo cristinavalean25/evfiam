@@ -18,7 +18,7 @@
   align-items: center;
   margin: 0 auto;
   margin-top: 5%;
-  width: 60%;
+  width: 70%;
 }
 
 .title-business {
@@ -37,6 +37,7 @@
   color: #0b3558;
   text-align: center;
   margin-bottom: 0;
+  width: 100%;
 }
 
 .details-div {
@@ -299,6 +300,52 @@
   line-height: 24px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .business-2 {
+    width: 95%;
+    height: 60vh auto;
+    background: linear-gradient(to bottom, #fbfbfc, #fff);
+    margin-bottom: 2px;
+  }
+
+  .title-tarife-business {
+    width: 95%;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 5%;
+    background-color: #eef2f7;
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .details-div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+  }
+
+  .subdiv-1,
+  .subdiv-2,
+  .subdiv-3 {
+    width: 100%;
+    display: flex;
+  }
+
+  .subdiv-1-details,
+  .subdiv-2-details,
+  .subdiv-3-details {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 20px;
+    flex-direction: column;
+    display: flex;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .business-2 {
     width: 100%;
@@ -308,12 +355,11 @@
   }
 
   .title-tarife-business {
-    width: 94%;
+    width: 98%;
     text-align: center;
     align-items: center;
     margin: 0 auto;
     margin-top: 5%;
-    background-color: #eef2f7;
     border-radius: 10px;
   }
 
