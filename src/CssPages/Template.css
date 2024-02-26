@@ -172,37 +172,3 @@
     left: -5%;
   }
 }
-
-@media only screen and (orientation: landscape) {
-  .text-container-template {
-    position: absolute;
-    top: 20%;
-    margin-left: 10%;
-    color: #fff;
-    width: 100%;
-  }
-
-  .title-template {
-    font-size: 18px;
-    width: 100%;
-  }
-
-  .details-container {
-    top: 55%;
-    width: 80%;
-    text-align: justify;
-    transform: translateY(-25%);
-  }
-
-  .details-container p {
-    font-size: 16px;
-    line-height: 1.2;
-  }
-
-  .container-list {
-    top: 72%;
-    color: #fff;
-    font-weight: 400;
-    left: 1%;
-  }
-}

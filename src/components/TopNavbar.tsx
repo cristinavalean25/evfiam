@@ -24,9 +24,9 @@ function TopNavbar() {
             </Link>
             <span className="mx-4">/</span>
             <FaEnvelope className="me-2" />
-            <a href="mailto:office@evfiam.com" className="navbar-link">
+            <Link to="mailto:office@evfiam.com" className="navbar-link">
               office@evfiam.com
-            </a>
+            </Link>
           </div>
           <div className="col-lg-6 col-md-12 d-flex align-items-center justify-content-lg-end justify-content-md-start">
             <FaPhone className="me-2" />

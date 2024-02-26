@@ -21,9 +21,14 @@ function Contact() {
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
   const [formError, setFormError] = useState("");
+  const [isMessageSent, setIsMessageSent] = useState(false);
 
   const emailRegex =
     /^[a-z][a-z0-9_]*@[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+
+  const clearFormError = () => {
+    setFormError("");
+  };
 
   const handleEmailChange = (event: any) => {
     const enteredEmail = event.target.value;
@@ -33,6 +38,7 @@ function Contact() {
       setEmailError("Introduceți o adresă de email validă");
     } else {
       setEmailError("");
+      clearFormError();
     }
   };
 
@@ -40,6 +46,7 @@ function Contact() {
     const inputValue = event.target.value;
     const numericValue = inputValue.replace(/\D/g, "");
     setPhone(numericValue);
+    clearFormError();
   };
 
   const handleSubmit = (event: any) => {
@@ -50,7 +57,9 @@ function Contact() {
       return;
     }
 
-    console.log("Message send!");
+    setIsMessageSent(true);
+    setTimeout(() => setIsMessageSent(false), 3000);
+    setFormError("");
   };
 
   return (
@@ -102,7 +111,7 @@ function Contact() {
               />
 
               <label htmlFor="message" className="label-contact">
-                Mesaj
+                Mesaj <span>*</span>
               </label>
               <textarea
                 id="message"
@@ -112,6 +121,7 @@ function Contact() {
               ></textarea>
 
               {formError && <p style={{ color: "red" }}>{formError}</p>}
+              {isMessageSent && <p style={{ color: "green" }}>Message sent!</p>}
 
               <button type="submit" className="btn-trimite">
                 Trimite
